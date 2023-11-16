@@ -1,18 +1,14 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+const int ledPin = 9; // رقم الرجل الخاص بـ LED
+const int sensorPin = A0; // رقم الرجل الخاص بمستشعر الضوء
+int lastSensorValue = 0; // لتخزين آخر قيمة تم قراءتها من الحساس
 
 void setup() {
   // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
 }
