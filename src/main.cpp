@@ -2,7 +2,7 @@
 
 const int ledPin = 9; // رقم الرجل الخاص بـ LED
 const int sensorPin = A0; // رقم الرجل الخاص بمستشعر الضوء
-int lastSensorValue = 0; // لتخزين آخر قيمة تم قراءتها من الحساس
+float lastSensorValue = 0; // لتخزين آخر قيمة تم قراءتها من الحساس
 
 void setup() {
   pinMode(ledPin, OUTPUT); // تحديد رجل الـ LED كمخرج
@@ -10,5 +10,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  float CurrentSensorValue = analogRead(sensorPin); // get data From Sensor
+  CurrentSensorValue = map(CurrentSensorValue, 0, 1023, 0, 255); // تحويل قراءة الحساس إلى نطاق 0-255
 }
