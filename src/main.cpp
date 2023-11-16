@@ -23,8 +23,8 @@ void loop() {
   lastSensorValue = CurrentSensorValue; // تحديث آخر قيمة تم قراءتها ووضعها كأخر قيمة تم قرائتها بواسطة للحساس
   int x = Target - exp(-k * t - C); // حساب شدة الضوء بناءً على الصيغة الرياضية
 
-  /******************Control LED Light *******************/
-  
+  /****************** Control LED Light *******************/
+
   analogWrite(ledPin, x); // تعديل شدة الـ LED
 
   delay(100); // تأخير لمدة 100 مللي ثانية
