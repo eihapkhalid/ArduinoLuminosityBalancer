@@ -5,8 +5,8 @@ const int sensorPin = A0; // رقم الرجل الخاص بمستشعر الض�
 int lastSensorValue = 0; // لتخزين آخر قيمة تم قراءتها من الحساس
 
 void setup() {
-  // put your setup code here, to run once:
-
+  pinMode(ledPin, OUTPUT); // تحديد رجل الـ LED كمخرج
+  pinMode(sensorPin, INPUT); // تحديد رجل مستشعر الضوء كمدخل
 }
 
 void loop() {
