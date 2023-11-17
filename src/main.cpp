@@ -20,7 +20,7 @@ void loop() {
   float Target = CurrentSensorValue;// جعل الهدف هو القيمة الحالية للحساس
   float k = 0.1; // ثابت النسبة
   long t = millis() / 1000; // الزمن بالثواني == > 1 ثانية
-  float C = CurrentSensorValue - lastSensorValue; //  حساب الثابت  بناءً على الفرق بين القراءتين الحالية والسابقة وتجنب القيم السالبة
+  float C = abs(CurrentSensorValue - lastSensorValue); //  حساب الثابت  بناءً على الفرق بين القراءتين الحالية والسابقة وتجنب القيم السالبة
   lastSensorValue = CurrentSensorValue; // تحديث آخر قيمة تم قراءتها ووضعها كأخر قيمة تم قرائتها بواسطة للحساس
   int x = Target - exp(-k * t - C); // حساب شدة الضوء بناءً على الصيغة الرياضية
 
