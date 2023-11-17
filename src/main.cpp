@@ -10,7 +10,7 @@ void setup() {
 
 void loop() {
   readSensor();
-  float average = getAverageReading();
-  controlLED(average);
+  float averageOfSensorValue = getAverageReading();
+  controlLED(averageOfSensorValue);
   delay(10);
 }
