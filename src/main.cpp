@@ -2,6 +2,8 @@
 
 const int ledPin = 9; // رقم الرجل الخاص بـ LED
 const int sensorPin = A0; // رقم الرجل الخاص بمستشعر الضوء
+const int numReadings = 10; // عدد القراءات لحساب المتوسط
+
 float lastSensorValue = 0; // لتخزين آخر قيمة تم قراءتها من الحساس
 
 void setup() {
@@ -12,8 +14,16 @@ void setup() {
 
 void loop() {
   /********** LDR Sensor reading ***********************/
-  float CurrentSensorValue = analogRead(sensorPin); // get data From Sensor
-  CurrentSensorValue = map(CurrentSensorValue, 0, 1023, 0, 255); // تحويل قراءة الحساس إلى نطاق 0-255
+   float total = 0; // مجموع قراءات الحساس
+  float average = 0; // متوسط قراءات الحساس
+
+  /********** قراءة الحساس وحساب المتوسط *******************/
+  for (int i = 0; i < numReadings; i++) {
+    total += analogRead(sensorPin); // جمع قراءات الحساس
+    delay(10); // تأخير قصير لثبات القراءة
+  }
+  average = total / numReadings; // حساب المتوسط
+  float CurrentSensorValue = map(average, 0, 1023, 0, 255); // تحويل قراءة الحساس إلى نطاق 0-255
 
   /********** Use the differential equation to make the lighting adapt to the new value ***********************/
   // dx/dt = k * (Target - x) ===> -Ln(Target - x) + c2 = Kt + c1 ===> x = Target - e^ (-Kt-c)
