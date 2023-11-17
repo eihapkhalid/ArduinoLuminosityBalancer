@@ -19,10 +19,10 @@ void loop() {
   // dx/dt = k * (Target - x) ===> -Ln(Target - x) + c2 = Kt + c1 ===> x = Target - e^ (-Kt-c)
   float Target = CurrentSensorValue;// جعل الهدف هو القيمة الحالية للحساس
   float k = 0.1; // ثابت النسبة
-  long t = millis() / 1000; // الزمن بالثواني == > 1 ثانية
+  long t = millis(); // الزمن بالثواني == > 1 ثانية
   float C = abs(CurrentSensorValue - lastSensorValue); //  حساب الثابت  بناءً على الفرق بين القراءتين الحالية والسابقة وتجنب القيم السالبة
   lastSensorValue = CurrentSensorValue; // تحديث آخر قيمة تم قراءتها ووضعها كأخر قيمة تم قرائتها بواسطة للحساس
-  int x = Target - exp(-k * t - C); // حساب شدة الضوء بناءً على الصيغة الرياضية
+  int x = Target - exp(-k * t *.001 - C); // حساب شدة الضوء بناءً على الصيغة الرياضية
 
   /****************** Control LED Light *******************/
 
