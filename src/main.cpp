@@ -23,8 +23,8 @@ void loop() {
 
 /*********************controlLED()*********************************/
   if (Serial.available() > 0) {
-    int targetValue = Serial.parseInt(); // قراءة القيمة من الاتصال السيريال
-    controlLED(targetValue); // التحكم في الـ LED باستخدام القيمة المستلمة
+    int targetValueFromSerial = Serial.parseInt(); // قراءة القيمة من الاتصال السيريال
+    controlLED(targetValueFromSerial); // التحكم في الـ LED باستخدام القيمة المستلمة
   }
 
 }
