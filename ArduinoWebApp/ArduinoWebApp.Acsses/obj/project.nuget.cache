@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E7Cj/XBsOlIzZAV6Jbfsret8/0ZRetdHA2/w0y7rhJy8NIUs+YZ36rNIe8NskcuUHFHhUCgPiCG7sfwSaA3ReA==",
+  "dgSpecHash": "tHW4ZGwJPUaBoy+hQdyXMeeVlVpwBeSc9QCWPox2fiTOEC2posJbvH47yL5sMXBlo7SsB5K8l1ru+Jr9OgllgA==",
   "success": true,
-  "projectFilePath": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp\\ArduinoWebApp.csproj",
+  "projectFilePath": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\ArduinoWebApp.Acsses.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -17,6 +17,7 @@
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.14\\microsoft.entityframeworkcore.design.7.0.14.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.14\\microsoft.entityframeworkcore.relational.7.0.14.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.14\\microsoft.entityframeworkcore.sqlserver.7.0.14.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.14\\microsoft.entityframeworkcore.tools.7.0.14.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

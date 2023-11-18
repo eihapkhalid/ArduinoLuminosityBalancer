@@ -5,6 +5,10 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArduinoWebApp", "ArduinoWebApp\ArduinoWebApp.csproj", "{FE573BE1-502E-4139-AB78-E89143B5CF74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArduinoWebApp.Model", "ArduinoWebApp.Model\ArduinoWebApp.Model.csproj", "{E32C9601-7D5C-4D66-8D9D-28BC2BF89718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArduinoWebApp.Acsses", "ArduinoWebApp.Acsses\ArduinoWebApp.Acsses.csproj", "{0C64D48E-D35A-4A87-92F7-DAC817033F0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{FE573BE1-502E-4139-AB78-E89143B5CF74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE573BE1-502E-4139-AB78-E89143B5CF74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE573BE1-502E-4139-AB78-E89143B5CF74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E32C9601-7D5C-4D66-8D9D-28BC2BF89718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E32C9601-7D5C-4D66-8D9D-28BC2BF89718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E32C9601-7D5C-4D66-8D9D-28BC2BF89718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E32C9601-7D5C-4D66-8D9D-28BC2BF89718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C64D48E-D35A-4A87-92F7-DAC817033F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C64D48E-D35A-4A87-92F7-DAC817033F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C64D48E-D35A-4A87-92F7-DAC817033F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C64D48E-D35A-4A87-92F7-DAC817033F0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
