@@ -1,4 +1,4 @@
-namespace ArduinoWebApp.Models
+﻿namespace ArduinoWebApp.Model
 {
     public class ErrorViewModel
     {

@@ -1,3 +1,7 @@
+using ArduinoWebApp.Acsses.Data;
+using ArduinoWebApp.Acsses.UnitOfWork;
+using Microsoft.EntityFrameworkCore;
+
 namespace ArduinoWebApp
 {
     public class Program
@@ -8,6 +12,15 @@ namespace ArduinoWebApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            #region DefaultConnection
+            builder.Services.AddDbContext<ArduinoAppDbContext>(options =>
+                        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            #endregion
+
+            #region UnitOfWork
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            #endregion
 
             var app = builder.Build();
 
@@ -28,7 +41,7 @@ namespace ArduinoWebApp
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=LdrSensor}/{action=Index}/{id?}");
 
             app.Run();
         }
