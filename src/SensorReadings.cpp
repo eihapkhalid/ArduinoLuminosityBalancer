@@ -1,20 +1,19 @@
 #include "SensorReadings.h"
 
-const int numReadings = 10; // عدد القراءات لحساب المتوسط
-
-float lastSensorValue  = 0;// لتخزين آخر قيمة تم قراءتها من الحساس
+const int numReadings = 600; // عدد القراءات لتخزينها لمدة 10 دقائق (فرضًا قراءة كل ثانية)
+float readings[numReadings]; // مصفوفة لتخزين القراءات
+int readingIndex = 0; // مؤشر للمصفوفة
 
 void readSensor() {
-    float total = 0; // مجموع قراءات الحساس
-
-    for (int i = 0; i < numReadings; i++) {
-        total += analogRead(sensorPin); // جمع قراءات الحساس
-        delay(10); // تأخير قصير لثبات القراءة
-    }
-
-    lastSensorValue  = total / numReadings; // حساب المتوسط وتخزينه في lastSensorValue 
+  if (readingIndex < numReadings) {
+    readings[readingIndex] = analogRead(sensorPin); // تخزين القراءة في المصفوفة
+    readingIndex++;
+  }
 }
 
-float getAverageReading() {
-    return lastSensorValue ;
+void sendReadings() {
+  for (int i = 0; i < numReadings; i++) {
+    Serial.println(readings[i]); // إرسال القراءات عبر الاتصال السيريال
+  }
+  readingIndex = 0; // إعادة تعيين المؤشر لبدء تخزين جديد
 }

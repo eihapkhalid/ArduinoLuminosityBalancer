@@ -9,6 +9,6 @@ const int sensorPin = A0; // رقم الرجل الخاص بمستشعر الض�
 extern float lastSensorValue ;// لتخزين آخر قيمة تم قراءتها من الحساس
 // تعريف الوظائف والمتغيرات العامة لقراءة الحساس
 void readSensor();
-float getAverageReading();
+void sendReadings();
 
 #endif
