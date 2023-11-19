@@ -30,7 +30,7 @@ namespace ArduinoWebApp.library
             {
                 serialPort.Open();
                 Console.WriteLine("Received number: " + command);
-                serialPort.Write(command);
+                serialPort.WriteLine(command);
                 // لا حاجة لإغلاق المنفذ هنا بسبب استخدام using
             }
         }
