@@ -1,4 +1,3 @@
-#include "SensorReadings.h"
 #include "LEDControl.h"
 
 int PreTarget = 0; // تهيئة القيمة السابقة للهدف
