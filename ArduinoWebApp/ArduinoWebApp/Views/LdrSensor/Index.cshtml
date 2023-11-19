@@ -1,11 +1,12 @@
 ﻿@model LdrSensorViewModel
+
 <form asp-action="Send" method="post">
     <div id="data-display">
-    <h2>قراءات الإضاءة الحالية</h2>
-    @foreach (var reading in Model.LightReadings)
-    {
-        <p>@reading</p>
-    }
+        <h2>قراءات الإضاءة الحالية</h2>
+        @foreach (var reading in Model.LightReadings)
+        {
+            <p>@reading</p>
+        }
     </div>
     <div id="control-panel">
         <h2>لوحة التحكم</h2>
@@ -17,45 +18,47 @@
 
 
 
+
 <style>
     body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
 
-#data-display, #control-panel {
-    margin: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
+    #data-display, #control-panel {
+        margin: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
 
-button {
-    margin-top: 10px;
-}
+    button {
+        margin-top: 10px;
+    }
+
 
 </style>
 
 <script>
     function sendData() {
-    var lightLevel = document.getElementById("light-level").value;
-    var statusDiv = document.getElementById("status");
+        var lightLevel = document.getElementById("light-level").value;
+        var statusDiv = document.getElementById("status");
 
-    // AJAX request to send data to the server
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "your-server-endpoint", true);
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            statusDiv.innerHTML = "تم الإرسال بنجاح";
-        } else if (xhr.readyState === 4) {
-            statusDiv.innerHTML = "خطأ في الإرسال";
-        }
-    };
-    var data = JSON.stringify({ "lightLevel": lightLevel });
-    xhr.send(data);
-}
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "your-server-endpoint", true);
+        xhr.setRequestHeader("Content-Type", "application/json");
 
-// يمكنك إضافة الدالة لتحديث البيانات المعروضة
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                statusDiv.innerHTML = "تم الإرسال بنجاح";
+            } else if (xhr.readyState === 4) {
+                statusDiv.innerHTML = "خطأ في الإرسال";
+            }
+        };
+
+        var data = JSON.stringify({ "lightLevel": lightLevel });
+        xhr.send(data);
+    }
+
 
 </script>
