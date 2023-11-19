@@ -1,5 +1,6 @@
 using ArduinoWebApp.Acsses.Data;
 using ArduinoWebApp.Acsses.UnitOfWork;
+using ArduinoWebApp.library;
 using Microsoft.EntityFrameworkCore;
 
 namespace ArduinoWebApp
@@ -21,6 +22,9 @@ namespace ArduinoWebApp
             #region UnitOfWork
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             #endregion
+
+            //  ”ÃÌ· SerialPortConnector ﬂŒœ„…
+            builder.Services.AddSingleton<SerialPortConnector>();
 
             var app = builder.Build();
 

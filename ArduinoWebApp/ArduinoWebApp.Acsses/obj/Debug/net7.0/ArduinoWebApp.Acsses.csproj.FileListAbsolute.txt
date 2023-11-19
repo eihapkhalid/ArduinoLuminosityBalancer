@@ -15,3 +15,20 @@ D:\arduino platformIo\مجلد جديد (2)\ArduinoLuminosityBalancer\ArduinoWeb
 D:\arduino platformIo\مجلد جديد (2)\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\obj\Debug\net7.0\ref\ArduinoWebApp.Acsses.dll
 D:\arduino platformIo\مجلد جديد (2)\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\bin\Debug\net7.0\ArduinoWebApp.Model.dll
 D:\arduino platformIo\مجلد جديد (2)\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\bin\Debug\net7.0\ArduinoWebApp.Model.pdb
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\bin\Debug\net7.0\ArduinoWebApp.Acsses.deps.json
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\bin\Debug\net7.0\ArduinoWebApp.Acsses.runtimeconfig.json
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\bin\Debug\net7.0\ArduinoWebApp.Acsses.dll
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\bin\Debug\net7.0\ArduinoWebApp.Acsses.pdb
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\bin\Debug\net7.0\ArduinoWebApp.Model.dll
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\bin\Debug\net7.0\ArduinoWebApp.Model.pdb
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\obj\Debug\net7.0\ArduinoWebApp.Acsses.csproj.AssemblyReference.cache
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\obj\Debug\net7.0\ArduinoWebApp.Acsses.GeneratedMSBuildEditorConfig.editorconfig
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\obj\Debug\net7.0\ArduinoWebApp.Acsses.AssemblyInfoInputs.cache
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\obj\Debug\net7.0\ArduinoWebApp.Acsses.AssemblyInfo.cs
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\obj\Debug\net7.0\ArduinoWebApp.Acsses.csproj.CoreCompileInputs.cache
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\obj\Debug\net7.0\ArduinoWebApp.Acsses.csproj.CopyComplete
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\obj\Debug\net7.0\ArduinoWebApp.Acsses.dll
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\obj\Debug\net7.0\refint\ArduinoWebApp.Acsses.dll
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\obj\Debug\net7.0\ArduinoWebApp.Acsses.pdb
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\obj\Debug\net7.0\ArduinoWebApp.Acsses.genruntimeconfig.cache
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Acsses\obj\Debug\net7.0\ref\ArduinoWebApp.Acsses.dll

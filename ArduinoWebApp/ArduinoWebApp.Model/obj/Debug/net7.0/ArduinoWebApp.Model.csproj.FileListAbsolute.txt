@@ -10,3 +10,15 @@ D:\arduino platformIo\مجلد جديد (2)\ArduinoLuminosityBalancer\ArduinoWeb
 D:\arduino platformIo\مجلد جديد (2)\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\obj\Debug\net7.0\refint\ArduinoWebApp.Model.dll
 D:\arduino platformIo\مجلد جديد (2)\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\obj\Debug\net7.0\ArduinoWebApp.Model.pdb
 D:\arduino platformIo\مجلد جديد (2)\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\obj\Debug\net7.0\ref\ArduinoWebApp.Model.dll
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\bin\Debug\net7.0\ArduinoWebApp.Model.deps.json
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\bin\Debug\net7.0\ArduinoWebApp.Model.dll
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\bin\Debug\net7.0\ArduinoWebApp.Model.pdb
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\obj\Debug\net7.0\ArduinoWebApp.Model.csproj.AssemblyReference.cache
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\obj\Debug\net7.0\ArduinoWebApp.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\obj\Debug\net7.0\ArduinoWebApp.Model.AssemblyInfoInputs.cache
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\obj\Debug\net7.0\ArduinoWebApp.Model.AssemblyInfo.cs
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\obj\Debug\net7.0\ArduinoWebApp.Model.csproj.CoreCompileInputs.cache
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\obj\Debug\net7.0\ArduinoWebApp.Model.dll
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\obj\Debug\net7.0\refint\ArduinoWebApp.Model.dll
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\obj\Debug\net7.0\ArduinoWebApp.Model.pdb
+D:\USB Drive\ايهاب\c++\مشاريع احترافي\ArduinoLuminosityBalancer\ArduinoWebApp\ArduinoWebApp.Model\obj\Debug\net7.0\ref\ArduinoWebApp.Model.dll

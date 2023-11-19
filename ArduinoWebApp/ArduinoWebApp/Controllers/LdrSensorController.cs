@@ -16,13 +16,13 @@ namespace ArduinoWebApp.Controllers
         }
         public IActionResult Index()
         {
-            var data = _serialPortConnector.Receive(); // استقبال البيانات من الأردوينو
-            var lightReadings = ParseDataToArray(data);
-            var targetLightLevel = CalculateTargetLightLevel(lightReadings, GetCurrentTimeOfDay());
-            _serialPortConnector.Send(targetLightLevel.ToString()); // إرسال القيمة المستهدفة للأردوينو
-
+            //var data = _serialPortConnector.Receive(); // استقبال البيانات من الأردوينو
+            //var lightReadings = ParseDataToArray(data);
+            //var targetLightLevel = CalculateTargetLightLevel(lightReadings, GetCurrentTimeOfDay());
+            //_serialPortConnector.Send(targetLightLevel.ToString()); // إرسال القيمة المستهدفة للأردوينو
+            _serialPortConnector.Send("255");
             // إضافة القيم المتوسطة إلى قاعدة البيانات
-            SaveSensorReading(lightReadings.Average(), DateTime.Now);
+            //SaveSensorReading(lightReadings.Average(), DateTime.Now);
 
             return View();
         }
