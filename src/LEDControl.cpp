@@ -1,20 +1,23 @@
 #include "LEDControl.h"
 
 int PreTarget = 0; // تهيئة القيمة السابقة للهدف
+int currentLEDValue = 0; // تخزين القيمة الحالية لشدة الـ LED
 
 void controlLED(int targetValueFromSerial) {
-    // dx/dt = k * (Target - x) ===> -Ln(Target - x) + c2 = Kt + c1 ===> x = Target - e^ (-Kt-c)
-    int Target = targetValueFromSerial;
-    float k = 0.1; // ثابت النسبة
-    long t = millis(); // الزمن بالثواني == > 1 ثانية
-    int C = abs(Target - PreTarget ); // حساب الثابت بناءً على الفرق بين القراءتين الحالية والسابقة وتجنب القيم السالبة
-    int x = Target - exp(-k * t *.001 - C); // حساب شدة الضوء بناءً على الصيغة الرياضية
+    // فقط حساب وتطبيق القيمة الجديدة إذا تغير الهدف
+    if (PreTarget != targetValueFromSerial && targetValueFromSerial > 0) {
+        int Target = targetValueFromSerial;
+        float k = 0.1; // ثابت النسبة
+        long t = millis(); // الزمن بالثواني == > 1 ثانية
+        int C = abs(Target - PreTarget); // حساب الثابت C
 
-    x = constrain(x, 0, 255); // تأكد من أن x يبقى بين 0 و 255
+        // حساب شدة الضوء بناءً على الصيغة الرياضية
+        currentLEDValue = Target - exp(-k * t * 0.001 - C);
+        currentLEDValue = constrain(currentLEDValue, 0, 255); // تأكد من أن x يبقى بين 0 و 255
 
-    analogWrite(ledPin, x); // تعديل شدة الـ LED
+        analogWrite(ledPin, currentLEDValue); // تعديل شدة الـ LED
+        PreTarget = Target; // تحديث القيمة السابقة للهدف
 
-    PreTarget = Target; // تحديث القيمة السابقة للهدف
-
-    Serial.println(x); // طباعة قيمة x على الوحدة الطرفية السيريال
+        Serial.println(currentLEDValue); // طباعة قيمة x على الوحدة الطرفية السيريال
+    }
 }

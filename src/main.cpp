@@ -22,16 +22,16 @@ void loop() {
     readingIndex++;
     lastReadTime = millis();  // إعادة تعيين وقت آخر قراءة
   }
-  /*********************sendReadings() ارسال البيانات كل 10 دقائق*********************************/
+  /*********************sendReadings() ارسال البيانات كل 1 دقائق*********************************/
    // إرسال البيانات كل 60 ثانية
-  if (millis() - lastSendTime >= 60000) { // 30 ثانية = 30000 مللي ثانية
+  if (millis() - lastSendTime >= 10000) { // 30 ثانية = 30000 مللي ثانية
     sendReadings();           // إرسال البيانات
     lastSendTime = millis();  // إعادة تعيين وقت آخر إرسال
   }
 
 /*********************controlLED() اخز القيمة المطلوبة من السيريال وارسالها للخوارزمية للتحكم في شدة الاضاءة*********************************/
   // التحكم في الـ LED استناداً إلى القيمة المستلمة من السريال
-  if (Serial.available() > 0) {
+  if (Serial.available() > 0) { // send value above 0 
     int targetValueFromSerial = Serial.parseInt(); // قراءة القيمة من السريال
     controlLED(targetValueFromSerial);             // التحكم في الـ LED
   }
