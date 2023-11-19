@@ -1,6 +1,7 @@
 ﻿using ArduinoWebApp.Acsses.UnitOfWork;
 using ArduinoWebApp.library;
 using ArduinoWebApp.Model;
+using ArduinoWebApp.Model.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArduinoWebApp.Controllers
@@ -16,16 +17,35 @@ namespace ArduinoWebApp.Controllers
         }
         public IActionResult Index()
         {
-            var data = _serialPortConnector.Receive(); // استقبال البيانات من الأردوينو
-            //var lightReadings = ParseDataToArray(data);
-            //var targetLightLevel = CalculateTargetLightLevel(lightReadings, GetCurrentTimeOfDay());
-            //_serialPortConnector.Send(targetLightLevel.ToString()); // إرسال القيمة المستهدفة للأردوينو
-            _serialPortConnector.Send("255");
-            // إضافة القيم المتوسطة إلى قاعدة البيانات
-            //SaveSensorReading(lightReadings.Average(), DateTime.Now);
+            var data = _serialPortConnector.Receive();
+            var lightReadings = ParseDataToArray(data);
+            var targetLightLevel = CalculateTargetLightLevel(lightReadings, GetCurrentTimeOfDay());
+            _serialPortConnector.Send(targetLightLevel.ToString());
+            SaveSensorReading(lightReadings.Average(), DateTime.Now);
 
-            return View();
+            var viewModel = new LdrSensorViewModel
+            {
+                LightReadings = lightReadings,
+                TargetLightLevel = targetLightLevel
+            };
+
+            return View(viewModel);
         }
+
+        public IActionResult Send(string command)
+        {
+            try
+            {
+                var fullCommand = command;
+                _serialPortConnector.Send(fullCommand);
+                return Ok("تم الإرسال بنجاح");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("فشل الإرسال: " + ex.Message);
+            }
+        }
+
 
         private void SaveSensorReading(float averageValue, DateTime readingTime)
         {
@@ -39,9 +59,17 @@ namespace ArduinoWebApp.Controllers
         }
         private float[] ParseDataToArray(string data)
         {
-            // تحويل البيانات النصية إلى مصفوفة أرقام
-            return data.Split(',').Select(float.Parse).ToArray();
+            // تقسيم البيانات النصية إلى عناصر، وتحويل كل عنصر إلى رقم عشري (float)
+            // مع التعامل مع العناصر الفارغة أو غير الصحيحة
+            return data.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
+                       .Select(s =>
+                       {
+                           float.TryParse(s, out float parsedValue);
+                           return parsedValue;
+                       })
+                       .ToArray();
         }
+
 
         private TimeOfDay GetCurrentTimeOfDay()
         {

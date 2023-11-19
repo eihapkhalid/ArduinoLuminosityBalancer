@@ -1,25 +1,21 @@
-﻿<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <title>تحكم ومراقبة مستشعر الإضاءة LDR</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>تحكم ومراقبة مستشعر الإضاءة LDR</h1>
+﻿@model LdrSensorViewModel
+<form asp-action="Send" method="post">
     <div id="data-display">
-        <h2>قراءات الإضاءة الحالية</h2>
-        <!-- هنا سيتم عرض البيانات -->
+    <h2>قراءات الإضاءة الحالية</h2>
+    @foreach (var reading in Model.LightReadings)
+    {
+        <p>@reading</p>
+    }
     </div>
     <div id="control-panel">
         <h2>لوحة التحكم</h2>
-        <input type="number" id="light-level" placeholder="قيمة الإضاءة المستهدفة">
-        <button onclick="sendData()">إرسال</button>
+        <input type="text" name="command" placeholder="أدخل الأمر هنا">
+        <button type="submit">إرسال</button>
         <div id="status"></div>
     </div>
-    <script src="script.js"></script>
-</body>
-</html>
+</form>
+
+
 
 <style>
     body {

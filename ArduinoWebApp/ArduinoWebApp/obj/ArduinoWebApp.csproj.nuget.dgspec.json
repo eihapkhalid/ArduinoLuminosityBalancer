@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp\\ArduinoWebApp.csproj": {}
+    "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp\\ArduinoWebApp.csproj": {}
   },
   "projects": {
-    "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\ArduinoWebApp.Acsses.csproj": {
+    "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\ArduinoWebApp.Acsses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\ArduinoWebApp.Acsses.csproj",
+        "projectUniqueName": "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\ArduinoWebApp.Acsses.csproj",
         "projectName": "ArduinoWebApp.Acsses",
-        "projectPath": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\ArduinoWebApp.Acsses.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\obj\\",
+        "projectPath": "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\ArduinoWebApp.Acsses.csproj",
+        "packagesPath": "C:\\Users\\Tech_Ports\\.nuget\\packages\\",
+        "outputPath": "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tech_Ports\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj": {
-                "projectPath": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj"
+              "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj": {
+                "projectPath": "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj"
               }
             }
           }
@@ -71,21 +71,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj": {
+    "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj",
+        "projectUniqueName": "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj",
         "projectName": "ArduinoWebApp.Model",
-        "projectPath": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\obj\\",
+        "projectPath": "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj",
+        "packagesPath": "C:\\Users\\Tech_Ports\\.nuget\\packages\\",
+        "outputPath": "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tech_Ports\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -126,21 +126,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp\\ArduinoWebApp.csproj": {
+    "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp\\ArduinoWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp\\ArduinoWebApp.csproj",
+        "projectUniqueName": "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp\\ArduinoWebApp.csproj",
         "projectName": "ArduinoWebApp",
-        "projectPath": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp\\ArduinoWebApp.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp\\obj\\",
+        "projectPath": "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp\\ArduinoWebApp.csproj",
+        "packagesPath": "C:\\Users\\Tech_Ports\\.nuget\\packages\\",
+        "outputPath": "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tech_Ports\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -154,11 +154,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\ArduinoWebApp.Acsses.csproj": {
-                "projectPath": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\ArduinoWebApp.Acsses.csproj"
+              "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\ArduinoWebApp.Acsses.csproj": {
+                "projectPath": "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Acsses\\ArduinoWebApp.Acsses.csproj"
               },
-              "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj": {
-                "projectPath": "D:\\USB Drive\\ايهاب\\c++\\مشاريع احترافي\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj"
+              "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj": {
+                "projectPath": "D:\\arduino platformIo\\مجلد جديد (2)\\ArduinoLuminosityBalancer\\ArduinoWebApp\\ArduinoWebApp.Model\\ArduinoWebApp.Model.csproj"
               }
             }
           }
@@ -203,7 +203,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
