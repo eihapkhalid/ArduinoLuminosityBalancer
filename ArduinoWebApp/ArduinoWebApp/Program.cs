@@ -26,6 +26,9 @@ namespace ArduinoWebApp
             //  ”ÃÌ· SerialPortConnector ﬂŒœ„…
             builder.Services.AddSingleton<SerialPortConnector>();
 
+            //  ”ÃÌ· CalculateSensorReading ﬂŒœ„…
+            builder.Services.AddScoped<ArduinoWebApp.Utilities.CalculateSensorReading>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

@@ -6,7 +6,7 @@ namespace ArduinoWebApp.library
     public class SerialPortConnector
     {
         private readonly int _baudRate = 9600;
-        private readonly string _portName = "COM1";
+        private readonly string _portName = "COM10";
         private readonly Parity _parity = Parity.None;
         private readonly int _dataBits = 8;
         private readonly StopBits _stopBits = StopBits.One;
