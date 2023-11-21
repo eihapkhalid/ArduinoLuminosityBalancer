@@ -39,26 +39,20 @@
 
 </style>
 
-<script>
-    function sendData() {
-        var lightLevel = document.getElementById("light-level").value;
-        var statusDiv = document.getElementById("status");
+<<script>
+     function refreshData() {
+         fetch('/LdrSensor/GetData') // استخدم مسار API الصحيح لجلب البيانات
+             .then(response => response.json())
+             .then(data => {
+                 var dataDisplay = document.getElementById('data-display');
+                 dataDisplay.innerHTML = '<h2>قراءات الإضاءة الحالية</h2>';
+                 data.forEach(reading => {
+                     dataDisplay.innerHTML += `<p>${reading}</p>`;
+                 });
+             });
+     }
 
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "your-server-endpoint", true);
-        xhr.setRequestHeader("Content-Type", "application/json");
+     setInterval(refreshData, 10000); // تحديث البيانات كل 10 ثواني
 
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                statusDiv.innerHTML = "تم الإرسال بنجاح";
-            } else if (xhr.readyState === 4) {
-                statusDiv.innerHTML = "خطأ في الإرسال";
-            }
-        };
-
-        var data = JSON.stringify({ "lightLevel": lightLevel });
-        xhr.send(data);
-    }
-
-
+         // الكود الخاص بإرسال البيانات (sendData)
 </script>

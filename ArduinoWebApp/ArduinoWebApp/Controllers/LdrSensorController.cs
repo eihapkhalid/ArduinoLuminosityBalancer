@@ -18,6 +18,17 @@ namespace ArduinoWebApp.Controllers
             _calculateSensorReading = calculateSensorReading;
             _unitOfWork = unitOfWork;
         }
+
+        [HttpGet]
+        public IActionResult GetData()
+        {
+            // استدعاء الطريقة التي تجلب البيانات من SerialPortConnector
+            var data = _serialPortConnector.Receive(); // افترض أن هذه الطريقة تعيد قراءات الإضاءة الحالية
+
+            // قد تحتاج إلى تحويل البيانات إلى شكل مناسب إذا لزم الأمر
+            // عودة البيانات كاستجابة JSON
+            return Ok(data);
+        }
         public IActionResult Index()
         {
             var data = _serialPortConnector.Receive();
